@@ -9,6 +9,11 @@
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <!-- Include the jQuery Mobile library -->
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/themes/theme1.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+
 </head>
 <body>
 
@@ -18,23 +23,31 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>blablabla</p>
-    <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
-  </div>
+    
+    <input id="inputThingToDo" type="search" name="search" id="search-basic" placeholder="What do you want to do?" />
+    <input id="inputWhereToDoIt" type="search" name="search" id="search-basic" placeholder="Where do you want to do it?" />
 
+    <a href="#pagetwo" data-transition="slide">Search!</a>
+  </div>
+  <!--
   <div data-role="footer">
     <h1>Yooooo</h1>
   </div>
+  -->
 </div> 
 
 <div data-role="page" id="pagetwo">
   <div data-role="header">
+    <a href="#" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left" data-rel="back">Go Back</a>
     <h1>THRILLSEEKER</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>hejsan</p>
-    <a href="#pageone" data-transition="slide">Back</a>
+    <button id="cathegory1" class="ui-btn">Extreme Sports</button>
+    <button id="cathegory2" class="ui-btn">Amusement Parks</button>
+    <button id="cathegory3" class="ui-btn">Nature</button>
+    <button id="cathegory4" class="ui-btn">blablabla</button>   
+    
   </div>
 </div> 
 
